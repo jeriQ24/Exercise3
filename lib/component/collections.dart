@@ -150,13 +150,13 @@ class Collections extends StatelessWidget {
                     SizedBox(
                       height: 130,
                       child: Image.asset(
-                        'assets/scewdriver.jfif',
+                        'assets/screwdriver.jfif',
                         fit: BoxFit.contain,
                     
                       ),
                     ),
                     const SizedBox(height: 2,),
-                    const Text("Scewdriver 9\$",
+                    const Text("Screwdriver 9\$",
                     style: TextStyle(fontSize: 18),
                     ),
                     
