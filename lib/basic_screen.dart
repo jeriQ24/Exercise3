@@ -1,3 +1,4 @@
+import 'package:exercise_228/component/my_drawer.dart';
 import 'package:flutter/material.dart';
 import 'about_us.dart';
 
@@ -7,7 +8,7 @@ class BasicScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: const Text('PirateWatch'),
+        title: const Text("Manny's Hardware"),
         actions: const <Widget>[
           Padding(
             padding: EdgeInsets.all(10.0),
@@ -15,51 +16,8 @@ class BasicScreen extends StatelessWidget {
           ),
         ],
       ),
-
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              const UserAccountsDrawerHeader(
-                accountName: Text('Abduwali Muse'),
-                accountEmail: Text('abduwalimuse@gmail.com'),
-                currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage('https://img.icons8.com/pastel-glyph/2x/user-male.png'),
-                  backgroundColor: Colors.white,
-                ),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 19, 39, 191),
-                )
-              ),
-              ListTile(
-                leading: Icon(Icons.groups),
-                title: Text('About Us'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AboutUs()),
-                  );
-                  // TODO: Handle item 1 tap
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.chat),
-                title: Text('Messages'),
-                onTap: () {
-                  // TODO: Handle item 1 tap
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.logout),
-                title: Text('Sign out'),
-                onTap: () {
-                  // TODO: Handle item 1 tap
-                },
-              ),
-              
-            ],
-          ),
-        ),
+        
+      drawer: const MyDrawer(),
     );
   }
 }
