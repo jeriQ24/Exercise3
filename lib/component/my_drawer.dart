@@ -35,7 +35,7 @@ class MyDrawer extends StatelessWidget {
               ),
               ListTile(
                 leading: const Icon(Icons.groups),
-                title: const Text('About Us'),
+                title: const Text('About'),
                 onTap: () {
                   Navigator.push(
                     context,
