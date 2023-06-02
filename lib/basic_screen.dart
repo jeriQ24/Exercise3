@@ -1,6 +1,5 @@
 import 'package:exercise_228/component/my_drawer.dart';
 import 'package:flutter/material.dart';
-import 'about_us.dart';
 
 class BasicScreen extends StatelessWidget {
   @override
@@ -16,7 +15,6 @@ class BasicScreen extends StatelessWidget {
           ),
         ],
       ),
-        
       drawer: const MyDrawer(),
     );
   }
